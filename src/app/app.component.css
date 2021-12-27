@@ -1,0 +1,14 @@
+.example-container {
+    width: auto;
+    height: 100%;
+    margin: 1px;
+  }
+
+  h1{
+    font-size: 2em;
+    text-align: center;
+  }
+
+  mat-toolbar{
+    align-items: center;
+  }

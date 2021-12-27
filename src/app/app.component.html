@@ -1,0 +1,22 @@
+<mat-toolbar style="align-items: center;">
+  <mat-toolbar-row style="align-items: center;">
+    <h1 style="text-align: center;">Movie APP</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+
+  <!--This is the Side list -->
+  <mat-drawer mode="side" opened>
+    <mat-nav-list *ngFor ="let movie of lstmovies">
+      <a routerLink="/details/{{movie.id}}" mat-list-item>{{movie.title}}</a>
+    </mat-nav-list>
+  </mat-drawer>
+
+
+  <mat-drawer-content>
+      <router-outlet></router-outlet>
+  </mat-drawer-content>
+
+  
+</mat-drawer-container>
